@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/cedricziel/node-red-contrib-mattermost-app/issues"
   },
-  "homepage": "https://github.com/cedricziel/node-red-contrib-mattermost-app#readme"
+  "homepage": "https://github.com/cedricziel/node-red-contrib-mattermost-app#readme",
+  "dependencies": {
+    "@mattermost/client": "^9.2.0"
+  }
 }
