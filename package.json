@@ -19,6 +19,19 @@
   },
   "homepage": "https://github.com/cedricziel/node-red-contrib-mattermost-app#readme",
   "dependencies": {
-    "@mattermost/client": "^9.2.0"
+    "@mattermost/client": "^9.2.0",
+    "@mattermost/types": "^9.2.0"
+  },
+  "node-red": {
+    "nodes": {
+      "mattermost-api": "mattermost-api.js",
+      "mattermost-config": "mattermost-config.js"
+    }
+  },
+  "devDependencies": {
+    "prettier": "3.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
