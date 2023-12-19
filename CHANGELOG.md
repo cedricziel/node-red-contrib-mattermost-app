@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/cedricziel/node-red-contrib-mattermost-app/compare/v1.1.1...v1.1.2) (2023-12-19)
+
+
+### Bug Fixes
+
+* Dont stringify ([d75a2ee](https://github.com/cedricziel/node-red-contrib-mattermost-app/commit/d75a2ee4b24914229eefc42b43bcf34f03f824c0))
+
 ## [1.1.1](https://github.com/cedricziel/node-red-contrib-mattermost-app/compare/v1.1.0...v1.1.1) (2023-12-19)
 
 
