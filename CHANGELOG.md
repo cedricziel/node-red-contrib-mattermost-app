@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/cedricziel/node-red-contrib-mattermost-app/compare/v1.1.0...v1.1.1) (2023-12-19)
+
+
+### Bug Fixes
+
+* Set registry url ([bf22857](https://github.com/cedricziel/node-red-contrib-mattermost-app/commit/bf228575cf10ccb35625d798e5bf272afeb9d667))
+
 ## [1.1.0](https://github.com/cedricziel/node-red-contrib-mattermost-app/compare/v1.0.0...v1.1.0) (2023-12-19)
 
 

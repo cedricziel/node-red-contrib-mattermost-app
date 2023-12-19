@@ -1,6 +1,6 @@
 {
   "name": "@cedricziel/node-red-contrib-mattermost-app",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Interact with Mattermost throught the apps framework",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
