@@ -19,8 +19,6 @@ module.exports = function (RED) {
     node.password = node.credentials.password || "";
     node.access_token = node.credentials.access_token || "";
 
-    node.log(JSON.stringify(node));
-
     const mattermost = require("@mattermost/client");
 
     node.on("close", function (done) {
