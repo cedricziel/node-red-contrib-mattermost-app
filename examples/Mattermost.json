@@ -1,0 +1,201 @@
+[
+  {
+    "id": "190fa245fd69c6ac",
+    "type": "tab",
+    "label": "Mattermost",
+    "disabled": false,
+    "info": "",
+    "env": []
+  },
+  {
+    "id": "4aa173a4db24c21a",
+    "type": "mattermost-api",
+    "z": "190fa245fd69c6ac",
+    "name": "Mattermost API",
+    "host": "9a5078b9a65551d0",
+    "x": 560,
+    "y": 120,
+    "wires": [
+      [
+        "1ee3ffee255ab329",
+        "e7579e5d15950edf"
+      ]
+    ]
+  },
+  {
+    "id": "5c84e396ab42d4c0",
+    "type": "inject",
+    "z": "190fa245fd69c6ac",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 120,
+    "y": 120,
+    "wires": [
+      [
+        "7ac18040f6d147b7"
+      ]
+    ]
+  },
+  {
+    "id": "7ac18040f6d147b7",
+    "type": "function",
+    "z": "190fa245fd69c6ac",
+    "name": "preparePost",
+    "func": "msg.method = 'createPost';\nmsg.args = [\n    {\n        channel_id: '9hny6qqrrffymdteds48s1mo9h',\n        message: 'hello',\n    }\n];\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 310,
+    "y": 120,
+    "wires": [
+      [
+        "4aa173a4db24c21a"
+      ]
+    ]
+  },
+  {
+    "id": "1ee3ffee255ab329",
+    "type": "debug",
+    "z": "190fa245fd69c6ac",
+    "name": "debug 10",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 800,
+    "y": 120,
+    "wires": []
+  },
+  {
+    "id": "6e7756a31720d567",
+    "type": "mattermost-api",
+    "z": "190fa245fd69c6ac",
+    "name": "Mattermost API",
+    "host": "9a5078b9a65551d0",
+    "x": 560,
+    "y": 200,
+    "wires": [
+      [
+        "371f9d38fbf7e778",
+        "dcbd22e11f468efc"
+      ]
+    ]
+  },
+  {
+    "id": "e7579e5d15950edf",
+    "type": "function",
+    "z": "190fa245fd69c6ac",
+    "name": "prepareAddReaction",
+    "func": "msg.method = 'addReaction';\nmsg.args = [\n    msg.payload.user_id,\n    msg.payload.id,\n    'thumbsup'\n];\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 340,
+    "y": 200,
+    "wires": [
+      [
+        "6e7756a31720d567"
+      ]
+    ]
+  },
+  {
+    "id": "371f9d38fbf7e778",
+    "type": "debug",
+    "z": "190fa245fd69c6ac",
+    "name": "debug 11",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 800,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "724d21b4ba926ecc",
+    "type": "mattermost-api",
+    "z": "190fa245fd69c6ac",
+    "name": "Mattermost API",
+    "host": "9a5078b9a65551d0",
+    "x": 560,
+    "y": 280,
+    "wires": [
+      [
+        "dcf14cf2f2b82d39"
+      ]
+    ]
+  },
+  {
+    "id": "dcbd22e11f468efc",
+    "type": "function",
+    "z": "190fa245fd69c6ac",
+    "name": "prepareGetEmojisRoute",
+    "func": "msg.method = 'getMe';\nmsg.args = [];\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 350,
+    "y": 280,
+    "wires": [
+      [
+        "724d21b4ba926ecc"
+      ]
+    ]
+  },
+  {
+    "id": "dcf14cf2f2b82d39",
+    "type": "debug",
+    "z": "190fa245fd69c6ac",
+    "name": "debug 13",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 800,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "9a5078b9a65551d0",
+    "type": "mattermost-config",
+    "name": "Home",
+    "url": "https://example.com",
+    "team": "default",
+    "wssPort": "443",
+    "httpPort": "443",
+    "defaultChannel": "town-square"
+  }
+]
