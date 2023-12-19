@@ -18,12 +18,12 @@ jobs:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
           release-type: node
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
       - run: npm install npm@latest -g
       - run: npm install
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
         if: ${{ steps.release.outputs.release_created }}
