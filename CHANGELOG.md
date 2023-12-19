@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/cedricziel/node-red-contrib-mattermost-app/compare/v1.1.2...v1.2.0) (2023-12-19)
+
+
+### Features
+
+* Add example ([3c5e990](https://github.com/cedricziel/node-red-contrib-mattermost-app/commit/3c5e99074693b21f9ea7e220bdaf80cc4e93bd31))
+
 ## [1.1.2](https://github.com/cedricziel/node-red-contrib-mattermost-app/compare/v1.1.1...v1.1.2) (2023-12-19)
 
 
