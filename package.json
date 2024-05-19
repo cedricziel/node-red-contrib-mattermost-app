@@ -1,6 +1,6 @@
 {
   "name": "@cedricziel/node-red-contrib-mattermost-app",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Interact with Mattermost through the apps framework",
   "scripts": {
     "test": "mocha \"test/**/*_spec.js\""
