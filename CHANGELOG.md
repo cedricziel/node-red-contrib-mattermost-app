@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/cedricziel/node-red-contrib-mattermost-app/compare/v1.2.0...v1.2.1) (2024-05-19)
+
+
+### Bug Fixes
+
+* Add nodejs test ([#30](https://github.com/cedricziel/node-red-contrib-mattermost-app/issues/30)) ([50bc3ff](https://github.com/cedricziel/node-red-contrib-mattermost-app/commit/50bc3ff3560b10703220e5a424b658d16a8d4805))
+
 ## [1.2.0](https://github.com/cedricziel/node-red-contrib-mattermost-app/compare/v1.1.2...v1.2.0) (2023-12-19)
 
 
