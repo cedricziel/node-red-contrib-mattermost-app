@@ -5,9 +5,13 @@ updates:
     schedule:
       # Check for updates to GitHub Actions every week
       interval: "weekly"
+    assignees:
+      - cedricziel
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       # Check for updates to GitHub Actions every week
       interval: "weekly"
+    assignees:
+      - cedricziel
