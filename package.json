@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/cedricziel/node-red-contrib-mattermost-app#readme",
   "dependencies": {
-    "@mattermost/client": "^9.2.0",
+    "@mattermost/client": "^10.2.0",
     "@mattermost/types": "^9.2.0"
   },
   "node-red": {
